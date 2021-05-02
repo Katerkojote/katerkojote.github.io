@@ -1,0 +1,24 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="Test()" id="counter">Check</button>
+    <p>This program has been run <span id="displayCount">0</span> times.</p>
+
+    <script type="text/javascript">
+        var count = 0;
+        var button = document.getElementById("counter");
+        var display = document.getElementById("displayCount");
+
+        button.onclick = function () {
+            Test()
+            count++;
+            display.innerHTML = count;
+        }
+    </script>
+</body>
+
+</html>
